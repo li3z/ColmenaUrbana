@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "slug": "beneficios-miel",
+    "title": "Beneficios de la Miel para la Salud",
+    "date": "2024-01-15",
+    "author": "María López",
+    "excerpt": "Descubre los múltiples beneficios de consumir miel de forma regular.",
+    "content": "La miel es uno de los alimentos más antiguos y valiosos para la salud humana. Es rica en antioxidantes, tiene propiedades antibacterianas naturales y puede ayudar a aliviar problemas digestivos. Además, su contenido de azúcares simples proporciona energía rápida y efectiva.\n\nNuestra miel se produce siguiendo prácticas ecológicas y sin aditivos químicos. Cada gota conserva las propiedades naturales que hacen de la miel un aliado en la salud diaria.",
+    "image": "/images/beneficios-miel.jpg"
+  },
+  {
+    "id": 2,
+    "slug": "tecnicas-apicultura",
+    "title": "Técnicas Modernas de Apicultura",
+    "date": "2024-02-20",
+    "author": "Carlos Rodríguez",
+    "excerpt": "Explorando las últimas innovaciones en la cría de abejas.",
+    "content": "La apicultura moderna incorpora tecnologías avanzadas para mejorar la producción y el bienestar de las abejas. Desde sensores que monitorean condiciones ambientales hasta sistemas automatizados de extracción de miel, estas innovaciones permiten una gestión más eficiente.\n\nEn nuestra apiario, implementamos prácticas sostenibles que respetan tanto a las abejas como al medio ambiente. Creemos en la armonía entre la producción y la conservación natural.",
+    "image": "/images/tecnicas-apicultura.jpg"
+  },
+  {
+    "id": 3,
+    "slug": "miel-origen",
+    "title": "De dónde viene nuestra Miel",
+    "date": "2024-03-10",
+    "author": "Ana Martínez",
+    "excerpt": "El camino de la miel desde las flores hasta tu mesa.",
+    "content": "Cada jarabe de miel que consumimos tiene un recorrido fascinante. Las abejas recolectan néctar de flores, lo transforman en miel dentro del panal y luego la almacenamos cuidadosamente.\n\nNos enorgullecemos de nuestra producción local, donde cada proceso se realiza con dedicación y respeto por el entorno natural. Nuestra miel es pura, natural y producida con amor.",
+    "image": "/images/miel-origen.jpg"
+  }
+]

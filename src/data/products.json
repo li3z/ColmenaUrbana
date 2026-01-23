@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "slug": "miel-manzanilla",
+    "title": "Miel de Manzanilla",
+    "shortDesc": "Miel natural de manzanilla con sabor refrescante",
+    "longDesc": "Nuestra miel de manzanilla es producida por abejas que polinizan las flores de manzanilla en nuestros campos. Tiene un sabor suave y refrescante, ideal para endulzar té o postres.",
+    "price": 12.99,
+    "image": "/images/miel-manzanilla.jpg"
+  },
+  {
+    "id": 2,
+    "slug": "miel-rosa",
+    "title": "Miel de Rosa",
+    "shortDesc": "Miel con aroma floral y sabor suave",
+    "longDesc": "Esta miel especial se obtiene de las flores de rosa. Tiene un aroma delicado y un sabor suave, perfecto para quienes buscan una experiencia sensorial única.",
+    "price": 14.99,
+    "image": "/images/miel-rosa.jpg"
+  },
+  {
+    "id": 3,
+    "slug": "miel-eucalipto",
+    "title": "Miel de Eucalipto",
+    "shortDesc": "Miel con propiedades refrescantes y medicinales",
+    "longDesc": "Producida a partir de flores de eucalipto, esta miel tiene propiedades refrescantes y ayuda a aliviar congestión respiratoria. Es ideal para el invierno.",
+    "price": 13.99,
+    "image": "/images/miel-eucalipto.jpg"
+  }
+]

@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #E9BC62;
+  --color-secondary: #261D12;
+  --color-background: #F8F7F2;
+  --color-surface-1: #FFFFFF;
+  --color-surface-2: #EDEDED;
+
+  --background-honeycomb: url("data:image/svg+xml,%3Csvg width='60' height='104' viewBox='0 0 60 104' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l30 17.3v34.6L30 69.2 0 51.9V17.3zM30 104l30-17.3V52.1L30 34.8 0 52.1v34.6z' fill='%23E9BC62' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+
+  --font-sans: "Outfit", sans-serif;
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+
+  --shadow-soft: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
+}
+
+@utility btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-bold text-secondary transition-all hover:bg-yellow-400 hover:shadow-lg hover:-translate-y-0.5;
+}
+
+@utility btn-outline {
+  @apply inline-flex items-center justify-center rounded-full border-2 border-secondary px-8 py-3 text-sm font-bold text-secondary transition-all hover:bg-secondary hover:text-white;
+}
+
+@utility card {
+  @apply bg-surface-1 rounded-2xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+}
+
+/* Base styles are now automatically handled or can be added via @layer base */
+@layer base {
+  body {
+    @apply bg-background text-secondary font-sans antialiased;
+    background-image: var(--background-honeycomb);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold tracking-tight;
+  }
+}
