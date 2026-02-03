@@ -14,7 +14,7 @@ export const blogPosts = [
         date: '2026-01-15',
         author: 'Ana Martínez',
         category: 'Salud',
-        image: '/images/blog-1.jpg'
+        image: '/ColmenaUrbana/images/blog-1.jpg'
     },
     {
         id: 2,
@@ -27,14 +27,14 @@ export const blogPosts = [
             <ul>
                 <li>500g de harina</li>
                 <li>300ml de agua tibia</li>
-                <li>100g de miel HoniFarm</li>
+                <li>100g de miel ColmenaUrbana</li>
                 <li>Levadura fresca</li>
             </ul>
         `,
         date: '2026-01-20',
         author: 'Carlos Ruiz',
         category: 'Recetas',
-        image: '/images/blog-2.jpg'
+        image: '/ColmenaUrbana/images/blog-2.jpg'
     },
     {
         id: 3,
@@ -42,12 +42,12 @@ export const blogPosts = [
         title: 'Apicultura Sostenible',
         excerpt: 'Cómo cuidamos a nuestras abejas y protegemos el medio ambiente mediante prácticas responsables.',
         content: `
-            <p>En HoniFarm, el bienestar de las abejas es nuestra prioridad.</p>
+            <p>En ColmenaUrbana, el bienestar de las abejas es nuestra prioridad.</p>
             <p>Practicamos una apicultura respetuosa, dejando siempre suficiente miel para que la colmena pase el invierno sin problemas.</p>
         `,
         date: '2026-02-01',
         author: 'Lucía Fernández',
         category: 'Sostenibilidad',
-        image: '/images/blog-3.jpg'
+        image: '/ColmenaUrbana/images/blog-3.jpg'
     }
 ];

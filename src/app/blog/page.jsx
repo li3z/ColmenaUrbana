@@ -7,7 +7,7 @@ import { blogPosts } from '../../data/blogPosts.js';
 
 export default function BlogPage() {
     return (
-        <Layout title="Blog - HoniFarm" description="Noticias, consejos y recetas del mundo de la apicultura.">
+        <Layout title="Blog - ColmenaUrbana" description="Noticias, consejos y recetas del mundo de la apicultura.">
             <div className="py-24 bg-surface-1">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">

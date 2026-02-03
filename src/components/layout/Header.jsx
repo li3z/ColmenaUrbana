@@ -13,7 +13,7 @@ const Header = () => {
                             <path d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.95-1.477.125.045c.87.317 1.62.903 2.147 1.666L17.15 11l.006.002.348-.12c.57-.215 1.14-.383 1.706-.51L12 14.5l-7.21-4.128c.566.126 1.136.295 1.706.51l.348.12.006-.002-.072.134c.527-.763 1.277-1.349 2.147-1.666L9.05 11 12 11z" />
                         </svg>
                     </div>
-                    <span className="text-xl font-bold tracking-tight text-secondary">Honi<span className="text-primary-600">Farm</span></span>
+                    <span className="text-xl font-bold tracking-tight text-secondary">Colmena<span className="text-primary-600">Urbana</span></span>
                 </Link>
 
                 {/* Desktop Nav */}

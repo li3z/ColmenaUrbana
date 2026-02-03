@@ -8,10 +8,10 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                     <div className="col-span-1 md:col-span-1">
                         <Link href="/" className="inline-block mb-6 group">
-                            <span className="text-2xl font-bold tracking-tight text-white">Honi<span className="text-primary">Farm</span></span>
+                            <span className="text-2xl font-bold tracking-tight text-white">Colmena<span className="text-primary">Urbana</span></span>
                         </Link>
                         <p className="text-gray-400 leading-relaxed mb-6">
-                            Cultivando dulzura natural desde 2010. Comprometidos con la sostenibilidad y el bienestar de nuestras abejas.
+                            Cultivando dulzura natural desde 2010. Miel pura del Valle del Elqui a tu mesa.
                         </p>
                     </div>
 
@@ -28,23 +28,23 @@ const Footer = () => {
                     <div>
                         <h4 className="font-bold text-primary mb-6 uppercase tracking-wider text-sm">Legal</h4>
                         <ul className="space-y-4">
-                            <li><Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">Privacidad</Link></li>
-                            <li><Link href="/terms" className="text-gray-400 hover:text-white transition-colors">Términos</Link></li>
+                            <li><Link href="/legal/privacy" className="text-gray-400 hover:text-white transition-colors">Privacidad</Link></li>
+                            <li><Link href="/legal/terms" className="text-gray-400 hover:text-white transition-colors">Términos</Link></li>
                         </ul>
                     </div>
 
                     <div>
                         <h4 className="font-bold text-primary mb-6 uppercase tracking-wider text-sm">Contacto</h4>
                         <ul className="space-y-4 text-gray-400">
-                            <li>info@honifarm.com</li>
-                            <li>+34 912 345 678</li>
-                            <li>Calle de la Miel, 12<br />28001 Madrid, España</li>
+                            <li>contacto@colmenaurbana.cl</li>
+                            <li>+56 9 1234 5678</li>
+                            <li>Ruta D-41, Valle del Elqui<br />Región de Coquimbo, Chile</li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="pt-8 border-t border-white/10 text-center md:text-left flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
-                    <p>&copy; {new Date().getFullYear()} HoniFarm. Todos los derechos reservados.</p>
+                    <p>&copy; {new Date().getFullYear()} ColmenaUrbana. Todos los derechos reservados.</p>
                 </div>
             </div>
         </footer>

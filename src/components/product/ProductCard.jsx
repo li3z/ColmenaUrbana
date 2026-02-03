@@ -12,7 +12,7 @@ export default function ProductCard({ product }) {
                     className="w-full h-full object-contain drop-shadow-lg group-hover:scale-110 group-hover:drop-shadow-2xl transition-all duration-500"
                 />
                 <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-secondary shadow-sm z-10">
-                    New
+                    Nuevo
                 </div>
             </div>
 
@@ -31,7 +31,7 @@ export default function ProductCard({ product }) {
                 </p>
 
                 <div className="flex items-center justify-between mt-auto">
-                    <span className="text-xl font-bold text-secondary">{product.price} €</span>
+                    <span className="text-xl font-bold text-secondary">${product.price}</span>
                     <Link
                         href={`/products/${product.slug}`}
                         className="w-10 h-10 rounded-full bg-background border border-gray-200 flex items-center justify-center text-secondary hover:bg-primary hover:border-primary hover:text-white transition-all shadow-sm"

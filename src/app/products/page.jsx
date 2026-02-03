@@ -11,37 +11,37 @@ export default function ProductsPage() {
             slug: 'miel-multifloral',
             title: 'Miel Multifloral Valle del Elqui',
             shortDesc: 'Miel 100% pura cosechada en el corazón del Valle. Sabor intenso y natural.',
-            price: 15.00,
-            image: '/images/miel_valle_elqui.webp'
+            price: 15000,
+            image: '/ColmenaUrbana/images/miel_valle_elqui.webp'
         },
         {
             id: 2,
             slug: 'propoleo-puro',
             title: 'Propóleo Puro (Tintura)',
             shortDesc: 'Potente antibiótico natural. Refuerza tu sistema inmune.',
-            price: 18.50,
-            image: '/images/propoleo_tincture.webp'
+            price: 18500,
+            image: '/ColmenaUrbana/images/propoleo_tincture.webp'
         },
         {
             id: 3,
             slug: 'polen-abeja',
             title: 'Polen de Abeja',
             shortDesc: 'Superalimento energético rico en proteínas y vitaminas.',
-            price: 22.00,
-            image: '/images/polen_abeja.webp'
+            price: 22000,
+            image: '/ColmenaUrbana/images/polen_abeja.webp'
         },
         {
             id: 4,
             slug: 'jalea-real',
             title: 'Jalea Real Fresca',
             shortDesc: 'El secreto de la vitalidad y longevidad de la colmena.',
-            price: 35.00,
-            image: '/images/jalea.jpg' // Revert to placeholder or existing
+            price: 35000,
+            image: '/ColmenaUrbana/images/jalea.jpg' // Revert to placeholder or existing
         }
     ];
 
     return (
-        <Layout title="Tesoros de la Colmena - HoniFarm" description="Productos 100% puros de nuestras colmenas.">
+        <Layout title="Tesoros de la Colmena - ColmenaUrbana" description="Productos 100% puros de nuestras colmenas.">
             <div className="py-24 bg-surface-1">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">

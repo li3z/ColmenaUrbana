@@ -6,7 +6,7 @@ import Layout from '../../components/layout/Layout.jsx';
 
 export default function AboutPage() {
     return (
-        <Layout title="Nuestra Historia - HoniFarm" description="Tradición familiar en el Valle del Elqui.">
+        <Layout title="Nuestra Historia - ColmenaUrbana" description="Tradición familiar en el Valle del Elqui.">
             <div className="py-24 bg-background">
                 <div className="container mx-auto px-6">
                     <div className="max-w-4xl mx-auto text-center mb-16">
@@ -19,7 +19,7 @@ export default function AboutPage() {
                         <div className="relative h-96 rounded-3xl overflow-hidden shadow-2xl group">
                             {/* Placeholder for family image */}
                             <div className="absolute inset-0 bg-secondary/20 group-hover:bg-transparent transition-colors z-10"></div>
-                            <img src="/images/familia_apicultora.webp" alt="Familia apicultora en Valle del Elqui" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                            <img src="/ColmenaUrbana/images/familia_apicultora.webp" alt="Familia apicultora en Valle del Elqui" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                         </div>
                         <div>
                             <h2 className="text-3xl font-bold mb-6 text-secondary">Más que Apicultores: Guardianes del Valle</h2>
@@ -48,7 +48,7 @@ export default function AboutPage() {
                             </div>
                             <div className="relative h-80 rounded-3xl overflow-hidden shadow-xl">
                                 {/* Placeholder for landscape image */}
-                                <img src="/images/valle_elqui.jpg" alt="Paisaje Valle del Elqui" className="w-full h-full object-cover" />
+                                <img src="/ColmenaUrbana/images/valle_elqui.jpg" alt="Paisaje Valle del Elqui" className="w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>
