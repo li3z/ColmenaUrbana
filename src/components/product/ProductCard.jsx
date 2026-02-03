@@ -2,12 +2,20 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { useCart } from '../../context/CartContext.jsx';
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, buyNowMode }) {
     const { addToCart } = useCart();
     const [added, setAdded] = useState(false);
 
+    const handleCardClick = (e) => {
+        if (typeof buyNowMode !== 'undefined' && buyNowMode) {
+            e.preventDefault();
+            handleAddToCart(e);
+            window.location.href = '/cart'; // Force redirect after add
+        }
+    };
+
     const handleAddToCart = (e) => {
-        e.preventDefault(); // Prevent navigating to product page if clicking the button
+        e.preventDefault();
         e.stopPropagation();
         addToCart(product);
         setAdded(true);
@@ -15,7 +23,10 @@ export default function ProductCard({ product }) {
     };
 
     return (
-        <div className="card group h-full flex flex-col relative">
+        <div
+            className="card group h-full flex flex-col relative cursor-pointer"
+            onClick={handleCardClick}
+        >
             <Link href={`/products/${product.slug}`} className="relative overflow-hidden h-64 bg-surface-2 p-6 flex items-center justify-center group-hover:bg-white transition-colors duration-500 block">
                 <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img
