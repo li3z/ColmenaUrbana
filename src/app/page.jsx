@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Layout from '../components/layout/Layout.jsx';
 import HeroSection from '../components/layout/HeroSection.jsx';
 import ProductCard from '../components/product/ProductCard.jsx';
+import ProductCarousel from '../components/product/ProductCarousel.jsx';
 import BlogPostPreview from '../components/blog/BlogPostPreview.jsx';
 import { generateSchema } from '../utils/generateSchema.js';
 import { blogPosts } from '../data/blogPosts.js';
@@ -62,12 +63,8 @@ export default function HomePage() {
                         <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {products.map(product => (
-                            <div key={product.id} className="h-full">
-                                <ProductCard product={product} buyNowMode={true} />
-                            </div>
-                        ))}
+                    <div className="mt-12">
+                        <ProductCarousel products={products} buyNowMode={true} />
                     </div>
 
                     <div className="text-center mt-12">

@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { useCart } from '../../context/CartContext.jsx';
+import { useRouter } from 'next/navigation';
 
 export default function ProductCard({ product, buyNowMode }) {
     const { addToCart } = useCart();
     const [added, setAdded] = useState(false);
+    const router = useRouter();
 
     const handleCardClick = (e) => {
         if (typeof buyNowMode !== 'undefined' && buyNowMode) {
             e.preventDefault();
             handleAddToCart(e);
-            window.location.href = '/cart'; // Force redirect after add
+            router.push('/cart'); // Router handles basePath
         }
     };
 
