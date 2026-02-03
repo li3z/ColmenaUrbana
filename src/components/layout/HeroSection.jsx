@@ -53,7 +53,7 @@ export default function HeroSection() {
                     <div className="lg:w-1/2 relative flex justify-center">
                         <div className="relative z-10 w-4/5 max-w-md rounded-3xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
                             <img
-                                src="/ColmenaUrbana/images/miel-manzanilla.webp"
+                                src="/images/miel-manzanilla.webp"
                                 alt="Frasco de Miel"
                                 className="w-full h-auto object-cover transform scale-105"
                             />

@@ -16,7 +16,7 @@ export const blogPosts = [
         date: '2026-01-15',
         author: 'Ana Martínez',
         category: 'Salud',
-        image: '/ColmenaUrbana/images/miel_valle_elqui.webp'
+        image: '/images/miel_valle_elqui.webp'
     },
     {
         id: 2,
@@ -36,7 +36,7 @@ export const blogPosts = [
         date: '2026-01-20',
         author: 'Carlos Ruiz',
         category: 'Recetas',
-        image: '/ColmenaUrbana/images/blog-2.webp'
+        image: '/images/blog-2.webp'
     },
     {
         id: 3,
@@ -53,6 +53,6 @@ export const blogPosts = [
         date: '2026-01-22',
         author: 'Roberto Alquinta',
         category: 'Medio Ambiente',
-        image: '/ColmenaUrbana/images/blog-3.webp'
+        image: '/images/blog-3.webp'
     }
 ];

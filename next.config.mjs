@@ -4,8 +4,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/ColmenaUrbana',
-  assetPrefix: '/ColmenaUrbana',
 };
 
 export default nextConfig;
