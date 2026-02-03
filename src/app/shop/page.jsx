@@ -5,7 +5,7 @@ import Layout from '../../components/layout/Layout.jsx';
 
 export default function ShopPage() {
     return (
-        <Layout title="Tienda - HoniFarm" description="Compra nuestros productos de miel directamente.">
+        <Layout title="Tienda - ColmenaUrbana" description="Compra nuestros productos de miel directamente.">
             <div className="flex items-center justify-center min-h-[60vh]">
                 <div className="text-center">
                     <h1 className="text-4xl font-bold text-secondary mb-4">Tienda Online</h1>

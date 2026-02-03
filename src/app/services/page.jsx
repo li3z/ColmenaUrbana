@@ -39,7 +39,7 @@ export default function ServicesPage() {
     ];
 
     return (
-        <Layout title="Servicios - HoniFarm" description="Servicios profesionales de apicultura en el Valle del Elqui.">
+        <Layout title="Servicios - ColmenaUrbana" description="Servicios profesionales de apicultura en el Valle del Elqui.">
             <div className="py-24 bg-background">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">

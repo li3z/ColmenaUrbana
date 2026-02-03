@@ -11,7 +11,7 @@ export default function BlogPostClient({ post }) {
 
     return (
         <Layout
-            title={`${post.title} - Blog HoniFarm`}
+            title={`${post.title} - Blog ColmenaUrbana`}
             description={post.excerpt}
         >
             <article className="py-24 bg-background">
@@ -22,10 +22,11 @@ export default function BlogPostClient({ post }) {
 
                     <div className="bg-surface-1 rounded-3xl shadow-soft overflow-hidden">
                         <div className="h-64 md:h-96 w-full relative bg-gray-200">
-                            {/* Placeholder for actual image integration */}
-                            <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-                                [Imagen: {post.title}]
-                            </div>
+                            <img
+                                src={post.image}
+                                alt={post.title}
+                                className="w-full h-full object-cover"
+                            />
                         </div>
 
                         <div className="p-8 md:p-12">

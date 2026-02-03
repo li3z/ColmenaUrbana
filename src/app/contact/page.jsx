@@ -5,7 +5,7 @@ import Layout from '../../components/layout/Layout.jsx';
 
 export default function ContactPage() {
     return (
-        <Layout title="Contacto - HoniFarm" description="Ponte en contacto con nosotros para pedidos o consultas.">
+        <Layout title="Contacto - ColmenaUrbana" description="Ponte en contacto con nosotros para pedidos o consultas.">
             <div className="py-24 bg-background">
                 <div className="container mx-auto px-6">
                     <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-soft p-8 md:p-12 overflow-hidden relative">

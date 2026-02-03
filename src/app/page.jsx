@@ -33,16 +33,22 @@ export default function HomePage() {
 
     const schema = generateSchema({
         type: 'LocalBusiness',
-        name: 'HoniFarm',
-        description: 'Una empresa especializada en productos de apicultura y miel natural del Valle del Elqui.',
-        url: 'https://honifarm.com',
-        logo: 'https://honifarm.com/logo.png'
+        name: 'ColmenaUrbana',
+        description: 'Apicultura sostenible y miel natural del Valle del Elqui, Chile. Productos artesanales: Miel, Propóleo y Jalea Real.',
+        url: 'https://colmenaurbana.cl',
+        logo: 'https://colmenaurbana.cl/logo.png', // Placeholder
+        address: {
+            streetAddress: 'Ruta D-41',
+            addressLocality: 'Vicuña',
+            addressRegion: 'Coquimbo',
+            addressCountry: 'CL'
+        }
     });
 
     return (
         <Layout
-            title="HoniFarm - Miel y Apicultura del Valle del Elqui"
-            description="Productos de miel natural, propóleo y servicios de apicultura en el Valle del Elqui."
+            title="ColmenaUrbana - Miel del Valle del Elqui"
+            description="Venta de Miel Pura, Propóleo y Polen directo del Valle del Elqui. Apicultura tradicional chilena de alta calidad."
             schema={schema}
         >
             <HeroSection />
