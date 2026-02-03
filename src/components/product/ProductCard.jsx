@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
+import { useCart } from '../../context/CartContext.jsx';
 
 export default function ProductCard({ product }) {
+    const { addToCart } = useCart();
+    const [added, setAdded] = useState(false);
+
+    const handleAddToCart = (e) => {
+        e.preventDefault(); // Prevent navigating to product page if clicking the button
+        e.stopPropagation();
+        addToCart(product);
+        setAdded(true);
+        setTimeout(() => setAdded(false), 2000);
+    };
+
     return (
-        <div className="card group h-full flex flex-col">
+        <div className="card group h-full flex flex-col relative">
             <Link href={`/products/${product.slug}`} className="relative overflow-hidden h-64 bg-surface-2 p-6 flex items-center justify-center group-hover:bg-white transition-colors duration-500 block">
                 <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img
@@ -32,16 +44,24 @@ export default function ProductCard({ product }) {
                     {product.shortDesc}
                 </p>
 
-                <div className="flex items-center justify-between mt-auto">
-                    <span className="text-xl font-bold text-secondary">${product.price}</span>
-                    <Link
-                        href={`/products/${product.slug}`}
-                        className="w-10 h-10 rounded-full bg-background border border-gray-200 flex items-center justify-center text-secondary hover:bg-primary hover:border-primary hover:text-white transition-all shadow-sm"
+                <div className="flex items-center justify-between mt-auto gap-4">
+                    <span className="text-xl font-bold text-secondary">${product.price.toLocaleString('es-CL')}</span>
+
+                    <button
+                        onClick={handleAddToCart}
+                        className={`w-10 h-10 rounded-full flex items-center justify-center transition-all shadow-sm ${added ? 'bg-green-500 text-white' : 'bg-background border border-gray-200 text-secondary hover:bg-primary hover:border-primary hover:text-white'}`}
+                        title="Agregar al Carrito"
                     >
-                        <svg className="w-5 h-5" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                        </svg>
-                    </Link>
+                        {added ? (
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            </svg>
+                        ) : (
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                            </svg>
+                        )}
+                    </button>
                 </div>
             </div>
         </div>
