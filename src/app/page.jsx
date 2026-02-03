@@ -9,33 +9,9 @@ import BlogPostPreview from '../components/blog/BlogPostPreview.jsx';
 import { generateSchema } from '../utils/generateSchema.js';
 import { blogPosts } from '../data/blogPosts.js';
 
+import { products } from '../data/products.js';
+
 export default function HomePage() {
-    const products = [
-        {
-            id: 1,
-            slug: 'miel-multifloral',
-            title: 'Miel Multifloral Valle del Elqui',
-            shortDesc: 'Miel 100% pura cosechada en el corazón del Valle. Sabor intenso y natural.',
-            price: 15.00,
-            image: '/images/miel_valle_elqui.png' // New generated image
-        },
-        {
-            id: 2,
-            slug: 'propoleo-puro',
-            title: 'Propóleo Puro (Tintura)',
-            shortDesc: 'Potente antibiótico natural. Refuerza tu sistema inmune.',
-            price: 18.50,
-            image: '/images/propoleo_tincture.png' // New generated image
-        },
-        {
-            id: 3,
-            slug: 'polen-abeja',
-            title: 'Polen de Abeja',
-            shortDesc: 'Superalimento energético rico en proteínas y vitaminas.',
-            price: 22.00,
-            image: '/images/polen_abeja.png' // New generated image
-        }
-    ];
 
     const services = [
         {

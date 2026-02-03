@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function ProductCard({ product }) {
     return (
         <div className="card group h-full flex flex-col">
-            <div className="relative overflow-hidden h-64 bg-surface-2 p-6 flex items-center justify-center group-hover:bg-white transition-colors duration-500">
+            <Link href={`/products/${product.slug}`} className="relative overflow-hidden h-64 bg-surface-2 p-6 flex items-center justify-center group-hover:bg-white transition-colors duration-500 block">
                 <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img
                     src={product.image}
@@ -14,7 +14,7 @@ export default function ProductCard({ product }) {
                 <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-secondary shadow-sm z-10">
                     Nuevo
                 </div>
-            </div>
+            </Link>
 
             <div className="p-6 flex-grow flex flex-col">
                 <div className="mb-2 flex items-center justify-between">
@@ -22,9 +22,11 @@ export default function ProductCard({ product }) {
                     <div className="flex text-yellow-400 text-xs">★★★★★</div>
                 </div>
 
-                <h3 className="font-bold text-xl text-secondary mb-2 group-hover:text-primary transition-colors">
-                    {product.title}
-                </h3>
+                <Link href={`/products/${product.slug}`}>
+                    <h3 className="font-bold text-xl text-secondary mb-2 group-hover:text-primary transition-colors">
+                        {product.title}
+                    </h3>
+                </Link>
 
                 <p className="text-gray-600 text-sm mb-6 flex-grow line-clamp-2">
                     {product.shortDesc}
