@@ -36,7 +36,7 @@ export default function ProductsPage() {
             title: 'Jalea Real Fresca',
             shortDesc: 'El secreto de la vitalidad y longevidad de la colmena.',
             price: 35000,
-            image: '/ColmenaUrbana/images/jalea.jpg' // Revert to placeholder or existing
+            image: '/ColmenaUrbana/images/jalea.webp'
         }
     ];
 

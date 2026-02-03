@@ -14,7 +14,7 @@ export const blogPosts = [
         date: '2026-01-15',
         author: 'Ana Martínez',
         category: 'Salud',
-        image: '/ColmenaUrbana/images/blog-1.jpg'
+        image: '/ColmenaUrbana/images/blog-1.webp'
     },
     {
         id: 2,
@@ -34,7 +34,7 @@ export const blogPosts = [
         date: '2026-01-20',
         author: 'Carlos Ruiz',
         category: 'Recetas',
-        image: '/ColmenaUrbana/images/blog-2.jpg'
+        image: '/ColmenaUrbana/images/blog-2.webp'
     },
     {
         id: 3,
@@ -48,6 +48,6 @@ export const blogPosts = [
         date: '2026-02-01',
         author: 'Lucía Fernández',
         category: 'Sostenibilidad',
-        image: '/ColmenaUrbana/images/blog-3.jpg'
+        image: '/ColmenaUrbana/images/blog-3.webp'
     }
 ];

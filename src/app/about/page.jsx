@@ -48,7 +48,7 @@ export default function AboutPage() {
                             </div>
                             <div className="relative h-80 rounded-3xl overflow-hidden shadow-xl">
                                 {/* Placeholder for landscape image */}
-                                <img src="/ColmenaUrbana/images/valle_elqui.jpg" alt="Paisaje Valle del Elqui" className="w-full h-full object-cover" />
+                                <img src="/ColmenaUrbana/images/valle_elqui.webp" alt="Paisaje Valle del Elqui" className="w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>
