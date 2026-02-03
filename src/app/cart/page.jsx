@@ -84,17 +84,27 @@ export default function CartPage() {
                                 <h2 className="text-2xl font-bold mb-6 text-secondary">Productos</h2>
                                 <div className="space-y-6">
                                     {cart.map(item => (
-                                        <div key={item.id} className="flex items-center gap-4 border-b border-gray-100 pb-6 last:border-0 last:pb-0">
-                                            <div className="w-24 h-24 bg-surface-2 rounded-xl p-2 flex-shrink-0">
+                                        <div key={item.id} className="flex flex-col sm:flex-row items-start sm:items-center gap-4 border-b border-gray-100 pb-6 last:border-0 last:pb-0 relative">
+                                            <div className="w-full sm:w-24 h-32 sm:h-24 bg-surface-2 rounded-xl p-2 flex-shrink-0 flex items-center justify-center">
                                                 <img src={item.image} alt={item.title} className="w-full h-full object-contain" />
                                             </div>
-                                            <div className="flex-grow">
-                                                <Link href={`/products/${item.slug}`} className="font-bold text-secondary hover:text-primary transition-colors">
-                                                    {item.title}
-                                                </Link>
-                                                <p className="text-sm text-gray-500">{item.shortDesc}</p>
-                                                <div className="flex items-center gap-4 mt-2">
-                                                    <span className="font-bold text-primary">${item.price.toLocaleString('es-CL')}</span>
+                                            <div className="flex-grow w-full">
+                                                <div className="flex justify-between items-start">
+                                                    <Link href={`/products/${item.slug}`} className="font-bold text-secondary hover:text-primary transition-colors text-lg sm:text-base">
+                                                        {item.title}
+                                                    </Link>
+                                                    <button
+                                                        onClick={() => removeFromCart(item.id)}
+                                                        className="sm:hidden text-gray-400 hover:text-red-500 transition-colors p-1"
+                                                    >
+                                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <p className="text-sm text-gray-500 mt-1">{item.shortDesc}</p>
+                                                <div className="flex items-center justify-between mt-4 sm:justify-start sm:gap-6">
+                                                    <span className="font-bold text-primary text-lg">${item.price.toLocaleString('es-CL')}</span>
                                                     <div className="flex items-center border border-gray-200 rounded-lg">
                                                         <button
                                                             onClick={() => updateQuantity(item.id, item.quantity - 1)}
@@ -110,7 +120,7 @@ export default function CartPage() {
                                             </div>
                                             <button
                                                 onClick={() => removeFromCart(item.id)}
-                                                className="text-gray-400 hover:text-red-500 transition-colors p-2"
+                                                className="hidden sm:block text-gray-400 hover:text-red-500 transition-colors p-2"
                                             >
                                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
