@@ -12,7 +12,7 @@ export default function ProductsPage() {
             title: 'Miel Multifloral Valle del Elqui',
             shortDesc: 'Miel 100% pura cosechada en el corazón del Valle. Sabor intenso y natural.',
             price: 15.00,
-            image: '/images/miel_valle_elqui.png'
+            image: '/images/miel_valle_elqui.webp'
         },
         {
             id: 2,
@@ -20,7 +20,7 @@ export default function ProductsPage() {
             title: 'Propóleo Puro (Tintura)',
             shortDesc: 'Potente antibiótico natural. Refuerza tu sistema inmune.',
             price: 18.50,
-            image: '/images/propoleo_tincture.png'
+            image: '/images/propoleo_tincture.webp'
         },
         {
             id: 3,
@@ -28,7 +28,7 @@ export default function ProductsPage() {
             title: 'Polen de Abeja',
             shortDesc: 'Superalimento energético rico en proteínas y vitaminas.',
             price: 22.00,
-            image: '/images/polen_abeja.png'
+            image: '/images/polen_abeja.webp'
         },
         {
             id: 4,
